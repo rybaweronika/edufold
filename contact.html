@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>University Website Design</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://kit.fontawesome.com/78f024a9fb.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" >
+        
+        
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"> <img src="images/eduford_img/logo.png"> </a>
+                <div class="nav-menu" id="navManu">
+                    <!---<i  class="fa-solid fa-xmark" onclick="hideMenu()"></i>--->
+                    <ul>
+                        <li><a href="index.html" class="nav-link">HOME</a></li>
+                        <li><a href="about.html" class="nav-link">ABOUT</a></li>
+                        <li><a href="course.html" class="nav-link">COURSE</a></li>
+                        <li><a href="blog.html" class="nav-link">BLOG</a></li>
+                        <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <!----- <i class="fa-solid fa-bars" onclick="showMenu()"></i> --->
+            </nav>
+            <h1>
+                Contact Us
+            </h1>
+        </section>
+
+<!--------------------- Contact Us -------------------------->
+
+
+
+<section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XVY Road. ABC Ryba</h5>
+                        <p>Ellesmere Port, UK</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+66 678 678 6543</h5>
+                        <p>Monday to Friday 08:00-17:30</p>
+                        <p>Saturday 09:00-16:00</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@weronika.uk.com</h5>
+                        
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+
+                <form  onsubmit="sendEmail(); reset(); return false;">
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                    <input type="email" id="email" placeholder="Enter email address" required>
+                    <input type="text" id="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" id="message" placeholder="Message" required></textarea>
+                    <button type="submit"  class="hero-btn red-btn">Send</button>
+                    
+                </form>
+
+
+            </div>
+        </div>
+</section>
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19083.915097441382!2d-2.8913937!3d53.280768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ad9533edc276d%3A0xffd9ac3c5a1329d1!2sEllesmere%20Port!5e0!3m2!1sen!2suk!4v1651427208654!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+
+
+<!----------------------Footer------------------------------>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>It was popularised in the 1960s with the release of Letraset <br> sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-youtube"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart"></i> by Weronika R.</p>
+</section>
+<script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<!----------------------java script for toggle menu-------------->
+ <script>
+            var navLinks= document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            } 
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            } 
+ </script> 
+
+        <!-----<script scr="app.js"></script>---->  
+    </body>
+</html>
