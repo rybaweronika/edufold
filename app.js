@@ -9,7 +9,15 @@ hamburger.addEventListener("click", () => {
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
-}))
+}));
+
+/*------------------Form -------------- */
+
+window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  };
 /*function sendEmail() {
      Email.send({
          SecureToken: "cc93f76c-290d-4827-b3d2-761e9399e0aa",
